@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b25542ab4.js" crossorigin="anonymous"></script>
+    <title>NYT Article Search</title>
+</head>
+
+<body>
+    <div class="container" id="header">
+        <h1>New York Times Search</h1>
+    </div>
+
+    <div class="card">
+        <h5 class="card-header">Search Parameters</h5>
+        <div class="card-body">
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="searchBar">Search Term: </label>
+                <input type="iSearch" class="form-control" id="searchBarId" aria-describedby="searchHelp"
+                    placeholder="Enter Search Here">
+            </div>
+            <div class="form-group">
+                <label for="recordBar">Numbers of Record to Retrieve: </label>
+                <br>
+                <input type="records" class="recordControl" id="recordBarId" aria-describedby="recordHelp"
+                    placeholder="  #">
+            </div>
+            <div class="form-group">
+                <label for="startBar">Start Year: </label>
+                <br>
+                <input type="start" class="startControl" id="startBarId" aria-describedby="startHelp"
+                    placeholder="  Enter Start Year Here">
+            </div>
+            <div class="form-group">
+                <label for="endBar">End Year</label>
+                <br>
+                <input type="end" class="endControl" id="endBarId" aria-describedby="endHelp"
+                    placeholder="  Enter End Year Here">
+            </div>
+            <button type="searchBtn" id="search" class="btn btn-primary">Search <i class="fas fa-search"></i></button>
+            <button type="clearResultBtn" class="btn btn-primary">Clear Results</button>
+        </form>
+    </div>
+
+    <div class="card" id="card2">
+        <h5 class="card-header">Top Articles</h5>
+        <div id="result" class="card-body">
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/app.js"></script>
+
+</body>
+
+</html>

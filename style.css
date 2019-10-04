@@ -1,0 +1,37 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-weight: 700;
+    background: #003264;
+    color: white;
+    
+}
+
+h5 {
+    border: 2px solid black;
+}
+
+label {
+    font-weight: 600;
+}
+#searchBarId {
+    width: 950px;
+    
+}
+
+#recordBarId {
+    width: 950px;
+
+
+}
+#startBarId {
+    width: 950px;
+
+}
+
+#endBarId {
+    width: 950px;
+
+}
