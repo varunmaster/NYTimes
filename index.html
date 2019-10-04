@@ -21,34 +21,36 @@
     <div class="card">
         <h5 class="card-header">Search Parameters</h5>
         <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="searchBar">Search Term: </label>
+                    <input type="iSearch" class="form-control" id="searchBarId" aria-describedby="searchHelp"
+                        placeholder="Enter Search Here">
+                </div>
+                <div class="form-group">
+                    <label for="recordBar">Numbers of Record to Retrieve: </label>
+                    <br>
+                    <input type="records" class="recordControl" id="recordBarId" aria-describedby="recordHelp"
+                        placeholder="  #">
+                </div>
+                <div class="form-group">
+                    <label for="startBar">Start Year: </label>
+                    <br>
+                    <input type="start" class="startControl" id="startBarId" aria-describedby="startHelp"
+                        placeholder="  Enter Start Year Here">
+                </div>
+                <div class="form-group">
+                    <label for="endBar">End Year</label>
+                    <br>
+                    <input type="end" class="endControl" id="endBarId" aria-describedby="endHelp"
+                        placeholder="  Enter End Year Here">
+                </div>
+                <button type="searchBtn" id="search" class="btn btn-primary">Search <i
+                        class="fas fa-search"></i></button>
+                <button type="clearResultBtn" class="btn btn-primary">Clear Results</button>
+            </form>
         </div>
-        <form>
-            <div class="form-group">
-                <label for="searchBar">Search Term: </label>
-                <input type="iSearch" class="form-control" id="searchBarId" aria-describedby="searchHelp"
-                    placeholder="Enter Search Here">
-            </div>
-            <div class="form-group">
-                <label for="recordBar">Numbers of Record to Retrieve: </label>
-                <br>
-                <input type="records" class="recordControl" id="recordBarId" aria-describedby="recordHelp"
-                    placeholder="  #">
-            </div>
-            <div class="form-group">
-                <label for="startBar">Start Year: </label>
-                <br>
-                <input type="start" class="startControl" id="startBarId" aria-describedby="startHelp"
-                    placeholder="  Enter Start Year Here">
-            </div>
-            <div class="form-group">
-                <label for="endBar">End Year</label>
-                <br>
-                <input type="end" class="endControl" id="endBarId" aria-describedby="endHelp"
-                    placeholder="  Enter End Year Here">
-            </div>
-            <button type="searchBtn" id="search" class="btn btn-primary">Search <i class="fas fa-search"></i></button>
-            <button type="clearResultBtn" class="btn btn-primary">Clear Results</button>
-        </form>
+
     </div>
 
     <div class="card" id="card2">
